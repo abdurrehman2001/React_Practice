@@ -78,26 +78,48 @@ import './App.css';
 
 // 22-09-2021
 
+//  Input Access Code ===>
 
-import { useState } from 'react'
-function App() {
-  const [data, setData] = useState("")
-  const [print, setPrint] = useState("")
-  let getData = (e)=> {
-    console.log(e.target.value)
-    setData(e.target.value)
-    setPrint()
-  }
-  return (
-    <div className="App">
-      { print?
-        <h2>{data}</h2>
-      : null
-      }
-      <input type="text" onChange={getData} />
-      <button onClick={setPrint}>Cliclk</button>
-    </div>
-  )
-}
+// import { useState } from 'react'
+// function App() {
+//   const [data, setData] = useState("")
+//   const [print, setPrint] = useState("")
+//   let getData = (e)=> {
+//     console.log(e.target.value)
+//     setData(e.target.value)
+//     setPrint()
+//   }
+//   return (
+//     <div className="App">
+//       { print?
+//         <h1 style={{fontFamily:"monospace"}}>{data}</h1>
+//       : null
+//       }
+//       <input type="text" onChange={getData} />
+//       <button onClick={setPrint}>Cliclk</button>
+//     </div>
+//   )
+// }
+
+
+//      Tag Hide & Show 
+
+
+// import { useState } from 'react'
+// function App() {
+//   let [status, setStatus] = useState(true)
+//   return (
+//     <div className="App">
+//       {
+//       status ?
+//         <h1>Abdur Rehman</h1>
+//         : null
+//       }
+//       {/* <button onClick={()=>setStatus(false)} >Hide</button>
+//       <button onClick={()=>setStatus(true)}>Show</button> */}
+//       {/* <button onClick={()=>setStatus(!status)}>Toggle</button> */}
+//     </div>
+//   )
+// }
 
 export default App;
