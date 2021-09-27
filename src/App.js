@@ -122,4 +122,92 @@ import './App.css';
 //   )
 // }
 
+
+
+
+
+// function App() {
+//   let a = 'Mr.Kapadia';
+//   let b = 'Bubun'; 
+//   let c = 'Bhalu...!!';
+//   return (
+//     <div className="App">
+//       <p>{`${a} ${c} ${b}`}</p>
+//     </div>
+//   )
+// }
+
+
+
+// 27-09-21
+
+// Handle Form | checkbox | input field | select    
+
+// Ye mene apne tarike se kiya hai
+
+// import { useState } from 'react';
+
+// function App() {
+//   const [name, setName] = useState("")
+//   const [lastName, setLastName] = useState("")
+//   const [place, setPlace] = useState("")
+//   const [aG, setAg] = useState(false)
+//   function sub() {
+//     console.log(name, lastName, place, aG)
+//   }
+//   return (
+//     <div className="App">
+//       <h3>From Handle</h3>
+//       <form action="" onSubmit={(e) => e.preventDefault()}>
+//         <input type="text" placeholder="Enter Name" onChange={(e) => setName(e.target.value)} name="" id="" /><br /> <br />
+//         <input type="text" placeholder="Enter Last Name" onChange={(e) => setLastName(e.target.value)} name="" id="" /><br /><br />
+//         <select name="" id="" onChange={(e) => setPlace(e.target.value)} >
+//           <option>Select Area</option>
+//           <option>Burns Road</option>
+//           <option>Pakistan</option>
+//           <option>Kharadar</option>
+//         </select><br /><br />
+//         <input type="checkbox" name="" id="" onChange={(e) => setAg(e.target.checked)} />Agree Police
+//         <br /><br />
+//         <button onClick={sub}>Submit</button>
+//       </form>
+//     </div>
+//   )
+// }
+
+
+
+
+//  Ye Anil ka tarika hai neche code wala
+
+// import {useState} from 'react'
+
+// function App() {
+//   const [name,setName]=useState("");
+//   const [tnc,setTnc]=useState(false);
+//   const [interest,setInterest]=useState("");
+//   function getFormData(e)
+//   {
+//     console.warn(name,tnc,interest)
+//     e.preventDefault()
+//   }
+//   return (
+//     <div className="App">
+//      <h1>Handle Form in React</h1>
+//      <form onSubmit={getFormData}>
+//        <input type="text" placeholder="enter name" value={name} onChange={(e)=>setName(e.target.value)} /> <br /><br />
+//        <select onChange={(e)=>setInterest(e.target.value)}>
+//          <option>Select Options</option>
+//          <option>Marvel</option>
+//          <option>DC</option>
+//        </select> <br /><br />
+//        <input type="checkbox"  onChange={(e)=>setTnc(e.target.checked)} /><span>Accept Terms and conditions</span>
+//        <br /><br />
+//        <button type="submit">Submit</button>
+//        <button>Clear</button>
+//      </form>
+//     </div>
+//   );
+// }
+
 export default App;
