@@ -1,6 +1,7 @@
 // Conditional rendering | If Condition
 
-import { useState } from 'react'
+// import { useState } from 'react'
+
 // function Condition() {
 //     let [inn , setInn] = useState(false);
 //     if (inn)
@@ -30,4 +31,4 @@ import { useState } from 'react'
 
 // Ye Sai Tarika Hai Aur Naam Hai Is Ka Ternery Operator
 
-export default Condition;
+// export default Condition;
