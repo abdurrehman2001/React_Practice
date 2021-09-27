@@ -210,4 +210,19 @@ import './App.css';
 //   );
 // }
 
+
+
+// Conditional rendering | If Condition 
+
+// 27-09-2021
+
+// import Condition from './MyPracticeComponent/Condition';
+// function App(){
+//   return(
+//     <div className="App">
+//       <Condition />
+//     </div>
+//   )
+// }
+
 export default App;
