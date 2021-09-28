@@ -230,20 +230,11 @@ import './App.css';
 
 // Basic Form validation
 
-// import Login from './MyPracticeComponent/login'
-import {useState} from 'react'
+import Login from './MyPracticeComponent/login'
 function App() {
-  let [pri,setPri] = useState()
-  function handle(e){
-    return(
-      setPri(e.target.value)
-    )
-  }
   return (
     <div className="App">
-    {/* <Login placeholderOne={"Enter Your Name"} placeholdertwo={"Enter Your Password"} /> */}
-    <input type="text" onChange={handle} name="" id="" />
-      <h1>{pri}</h1>
+    <Login />
     </div>
   )
 }
