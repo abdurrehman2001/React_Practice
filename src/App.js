@@ -230,11 +230,39 @@ import './App.css';
 
 // Basic Form validation
 
-import Login from './MyPracticeComponent/login'
-function App() {
-  return (
+// import Login from './MyPracticeComponent/login'
+// function App() {
+//   return (
+//     <div className="App">
+//     <Login />
+//     </div>
+//   )
+// }
+
+
+// 29-09-2021
+
+// Pass Function as Props
+
+// import Sent from './MyPracticeComponent/Sent';
+
+// function App(){
+//   function foo (){
+//     alert("Hello I Am Perent Function")
+//   }
+//   return(
+//     <div className="App">
+//       <h1>Props pass Function</h1>
+//       <Sent fun={foo} />
+//     </div>
+//   )
+// }
+
+
+function App(){
+  return(
     <div className="App">
-    <Login />
+      hello
     </div>
   )
 }
