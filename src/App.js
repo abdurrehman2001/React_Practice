@@ -350,13 +350,60 @@ import './App.css';
 // export default App;
 
 
+// Array with map function & map in table 
+//  for loop trying
 
 
-function App(){
-  return(
-    <div className="App">
-Hello
+// function App() {
+//   const arr = ['ar', 'rafay', 'abdullah', 'umair', 'razzak']
+//   arr.map((v) => console.log("i am map function " + v))
+
+//   for (var i = 0; i < arr.length; i++) {
+//     console.log("i am for-loop " + arr[i])
+//   }
+
+//   const data = [
+//     {
+//       name: "abdur-rehman", email: "ar@testing.com", contact: "0321"
+//     },
+//     {
+//       name: "abdullah", email: "abdullah@testing.com", contact: "0331"
+//     },
+//     {
+//       name: "hammad", email: "hammad@testing.com", contact: "0341"
+//     }
+//   ]
+//   return (
+//     <div className="App">
+      {/* {arr.map((v) => 
+      <h3>{v}</h3>
+      )} */}
+
+      {/* {
+        data.map((v)=><h2>{v.name}</h2>)
+      } */}
+
+//  map in table
+
+      {/* <table border='1'> 
+        <tr style={{border:"2px solid red"}}>
+          <td style={{border:"2px solid red"}}>Name</td>
+          <td style={{border:"2px solid red"}}>Email</td>
+          <td style={{border:"2px solid red"}}>Contact</td>
+        </tr>
+        {
+        data.map((v) =>
+          <tr>
+            <td>{v.name}</td>
+            <td>{v.email}</td>
+            <td>{v.contact}</td>
+          </tr>
+        )
+        }
+      </table>
     </div>
   )
-}
-export default App;
+} */}
+
+
+// export default App;
