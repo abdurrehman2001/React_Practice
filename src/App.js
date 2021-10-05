@@ -310,3 +310,32 @@ import './App.css';
 // }
 
 // export default App;
+
+
+//  Style In React 3 ways
+
+// import './MyPracticeComponent/style.css'
+// import style from './MyPracticeComponent/custom.module.css'
+// function App(){
+//   return(
+//     <div className="App">
+//       <h1 className="design">Hello World</h1>
+//       <h1 style={{backgroundColor:"black",color:"red" ,border:"4px solid red" , padding:"12px"}}>Hello World</h1>
+//       <h1 className={style.oyee}>Hello World</h1>
+//     </div>
+//   )
+// }
+
+// export default App;
+
+
+
+function App(){
+  return(
+    <div className="App">
+      Hello
+    </div>
+  )
+}
+
+export default App;
