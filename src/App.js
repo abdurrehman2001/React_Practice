@@ -330,12 +330,33 @@ import './App.css';
 
 
 
+
+// Bootstrap OR React-Bootstrap in react
+
+
+// import Buttons from './Library-practice/Button';
+// import Alerts from './Library-practice/alert';
+// import Aaaa from './Library-practice/Close'
+// function App(){
+//   return(
+//     <div className="App">
+//       <Buttons onClick={()=>alert("HELLO WORLD")}>Click</Buttons>
+//     <Alerts />
+//     <Aaaa />
+//     </div>
+//   )
+// }
+
+// export default App;
+
+
+
+
 function App(){
   return(
     <div className="App">
-      Hello
+Hello
     </div>
   )
 }
-
 export default App;
