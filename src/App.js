@@ -259,12 +259,54 @@ import './App.css';
 // }
 
 
-function App(){
-  return(
-    <div className="App">
-      hello
-    </div>
-  )
-}
+//  UseEffect   05-10-21 without Props neche props k sth hai
 
-export default App;
+
+// import { useEffect, useState } from 'react';
+
+// function App() {
+//   const [count, setCount] = useState(10)
+//   const [data, setData] = useState(100)
+
+//   useEffect(() => {
+//     alert("count is : " + count)
+//   }, [count])
+// useEffect(()=>{
+//   console.log('data is :' + data);
+// },[data])
+//   return (
+//     <div className="App">
+//       <h1>Use Effect</h1>
+
+//       <h2>Count is : {count} </h2>
+//       <h2>Data is : {data}</h2>
+//       <button onClick={() => setCount(count + 1)}>Update Count</button>
+//       <button onClick={() => setData(data + 1)}>Updata Data</button>
+
+//     </div>
+//   )
+// }
+
+// export default App;
+
+
+
+// useEffect with Props
+
+// import { useState } from 'react';
+// import EffectWithProps from './MyPracticeComponent/EffectWithProps'
+// function App() {
+//   const [count, setCount] = useState(10)
+//   const [data, setData] = useState(100)
+//   return (
+//     <div className="App">
+//       <h1>Use Effect</h1>
+//       <EffectWithProps count={count} data={data} />
+//       <button onClick={() => setCount(count + 1)}>Update Count</button>
+//       <button onClick={() => setData(data + 1)}>Updata Data</button>
+
+//     </div>
+//   )
+// }
+
+// export default App;
