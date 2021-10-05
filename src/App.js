@@ -1,5 +1,6 @@
 // import { useState } from 'react/cjs/react.development';
 import './App.css';
+// import Table from 'react-bootstrap/Table'
 // import { useState, useEffect } from 'react'
 // function App() {
 //   // const [name, setName] = useState('Bolo')
@@ -375,17 +376,17 @@ import './App.css';
 //   ]
 //   return (
 //     <div className="App">
-      {/* {arr.map((v) => 
+{/* {arr.map((v) => 
       <h3>{v}</h3>
       )} */}
 
-      {/* {
+{/* {
         data.map((v)=><h2>{v.name}</h2>)
       } */}
 
 //  map in table
 
-      {/* <table border='1'> 
+{/* <table border='1'> 
         <tr style={{border:"2px solid red"}}>
           <td style={{border:"2px solid red"}}>Name</td>
           <td style={{border:"2px solid red"}}>Email</td>
@@ -406,4 +407,72 @@ import './App.css';
 } */}
 
 
+
 // export default App;
+
+
+//  list with bootstrap and conditional
+
+
+// function App() {
+//   const data = [
+//     {
+//       name: 'Danish', email: "danish@gmail.com", contact: "021", city: "karachi"
+//     },
+//     {
+//       name: 'Daniyal', email: "daniyal@gmail.com", contact: "021", city: "karachi"
+//     },
+//     {
+//       name: 'Riyaz', email: "riyaz@gmail.com", contact: "023", city: "karachi"
+//     },
+//     {
+//       name: 'Ibrahim', email: "ibrahim@gmail.com", contact: "026", city: "karachi"
+//     },
+//     {
+//       name: 'Razzak', email: "razzak@gmail.com", contact: "021", city: "karachi"
+//     },
+//   ]
+//   return (
+//     <div className="App">
+//       <Table striped hover variant="warning">
+//         <tbody>
+//         <tr>
+//           <td>Name</td>
+//           <td>Email</td>
+//           <td>Contact</td>
+//           <td>City</td>
+//         </tr>
+//         {
+//           data.map((v, i) =>
+//           v.contact === "021"?
+//             <tr key={i}>
+//               <td>{v.name}</td>
+//               <td>{v.email}</td>
+//               <td>{v.contact}</td>
+//               <td>{v.city}</td>
+//             </tr>
+//             :
+//             null
+//           )
+//         }
+//         </tbody>
+//       </Table>
+//     </div>
+//   )
+// }
+
+
+// export default App;
+
+
+
+function App(){
+  return(
+    <div className="App">
+hello
+    </div>
+  )
+}
+
+
+export default App;
