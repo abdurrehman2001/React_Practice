@@ -1,6 +1,9 @@
 // import { useState } from 'react/cjs/react.development';
-// import './App.css';
-import Table from 'react-bootstrap/Table'
+import './App.css';
+import Reuse from './MyPracticeComponent/Reuse';
+
+
+// import Table from 'react-bootstrap/Table'
 // import { useState, useEffect } from 'react'
 // function App() {
 //   // const [name, setName] = useState('Bolo')
@@ -472,125 +475,159 @@ import Table from 'react-bootstrap/Table'
 // import Table from 'react-bootstrap/Table'
 
 
-function App() {
-  const user = [
-    {
-      name: 'Suleman', Contact: '0333', email: 'suleman@gmail.com', address: [
-        {
-          House_No: '101', City: 'karachi', area: 'ranchorlain', country: 'pakistan'
-        },
-        {
-          House_No: '102', City: 'karachi', area: 'yhain-karachi', country: 'pakistan'
-        },
-        {
-          House_No: '103', City: 'karachi', area: 'pak', country: 'pakistan'
-        },
-        {
-          House_No: '104', City: 'karachi', area: 'karib', country: 'pakistan'
-        }
-      ]
-    },
-    {
-      name: 'Rehmatullah', Contact: '0341', email: 'rehmat@gmail.com', address: [
-        {
-          House_No: '505', City: 'punjab', area: 'saddar', country: 'pakistan'
-        },
-        {
-          House_No: '506', City: 'pun', area: 'sarr', country: 'pakistan'
-        }
-        ,
-        {
-          House_No: '507', City: 'pun', area: 'sar', country: 'pakistan'
-        }
-      ]
-    },
-    {
-      name: 'Arshad', Contact: '0311', email: 'arshad@gmail.com', address: [
-        {
-          House_No: '801', City: 'lahore', area: 'pakistan-chowk', country: 'pakistan'
-        },
-        {
-          House_No: '802', City: 'la', area: 'pak-cho', country: 'pakistan'
-        },
-        {
-          House_No: '803', City: 'karachi', area: 'pc', country: 'pakistan'
-        },
-        {
-          House_No: '804', City: 'karachi', area: 'paavcc', country: 'pakistan'
-        }
-      ]
-    },
-    {
-      name: 'Ehsan', Contact: '05565', email: 'ehsan@gmail.com', address: [
-        {
-          House_No: '909', City: 'karachi', area: 'metha-dar', country: 'pakistan'
-        },
-        {
-          House_No: '910', City: 'ka', area: 'metha', country: 'pakistan'
-        },
-        {
-          House_No: '911', City: 'ka', area: 'metha', country: 'pakistan'
-        }
-      ]
-    }, {
-      name: 'Jhangir', Contact: '56681', email: 'jhangir@gmail.com', address: [
-        {
-          House_No: '589', City: 'karachi', area: 'netijeti', country: 'pakistan'
-        },
-        {
-          House_No: '510', City: 'karhi', area: 'naattt', country: 'pakistan'
-        },
-        {
-          House_No: '511', City: 'kari', area: 'neti', country: 'pakistan'
-        },
-        {
-          House_No: '512', City: 'kar', area: 'net', country: 'pakistan'
-        }
-      ]
-    }
-  ]
+// function App() {
+//   const user = [
+//     {
+//       name: 'Suleman', Contact: '0333', email: 'suleman@gmail.com', address: [
+//         {
+//           House_No: '101', City: 'karachi', area: 'ranchorlain', country: 'pakistan'
+//         },
+//         {
+//           House_No: '102', City: 'karachi', area: 'yhain-karachi', country: 'pakistan'
+//         },
+//         {
+//           House_No: '103', City: 'karachi', area: 'pak', country: 'pakistan'
+//         },
+//         {
+//           House_No: '104', City: 'karachi', area: 'karib', country: 'pakistan'
+//         }
+//       ]
+//     },
+//     {
+//       name: 'Rehmatullah', Contact: '0341', email: 'rehmat@gmail.com', address: [
+//         {
+//           House_No: '505', City: 'punjab', area: 'saddar', country: 'pakistan'
+//         },
+//         {
+//           House_No: '506', City: 'pun', area: 'sarr', country: 'pakistan'
+//         }
+//         ,
+//         {
+//           House_No: '507', City: 'pun', area: 'sar', country: 'pakistan'
+//         }
+//       ]
+//     },
+//     {
+//       name: 'Arshad', Contact: '0311', email: 'arshad@gmail.com', address: [
+//         {
+//           House_No: '801', City: 'lahore', area: 'pakistan-chowk', country: 'pakistan'
+//         },
+//         {
+//           House_No: '802', City: 'la', area: 'pak-cho', country: 'pakistan'
+//         },
+//         {
+//           House_No: '803', City: 'karachi', area: 'pc', country: 'pakistan'
+//         },
+//         {
+//           House_No: '804', City: 'karachi', area: 'paavcc', country: 'pakistan'
+//         }
+//       ]
+//     },
+//     {
+//       name: 'Ehsan', Contact: '05565', email: 'ehsan@gmail.com', address: [
+//         {
+//           House_No: '909', City: 'karachi', area: 'metha-dar', country: 'pakistan'
+//         },
+//         {
+//           House_No: '910', City: 'ka', area: 'metha', country: 'pakistan'
+//         },
+//         {
+//           House_No: '911', City: 'ka', area: 'metha', country: 'pakistan'
+//         }
+//       ]
+//     }, {
+//       name: 'Jhangir', Contact: '56681', email: 'jhangir@gmail.com', address: [
+//         {
+//           House_No: '589', City: 'karachi', area: 'netijeti', country: 'pakistan'
+//         },
+//         {
+//           House_No: '510', City: 'karhi', area: 'naattt', country: 'pakistan'
+//         },
+//         {
+//           House_No: '511', City: 'kari', area: 'neti', country: 'pakistan'
+//         },
+//         {
+//           House_No: '512', City: 'kar', area: 'net', country: 'pakistan'
+//         }
+//       ]
+//     }
+//   ]
 
+//   return (
+//     <div className="App">
+//       <Table variant="dark">
+//         <tbody>
+//           <tr>
+//             <td>S.no</td>
+//             <td>Name</td>
+//             <td>Contact</td>
+//             <td>Email</td>
+//             <td style={{ textAlign: "center" }}>Address</td>
+//           </tr>
+//           {user.map((v, i) =>
+//             <tr>
+//               <td>{i + 1}</td>
+//               <td>{v.name}</td>
+//               <td>{v.Contact}</td>
+//               <td>{v.email}</td>
+//               <td>
+//                 <Table variant="dark" hover>
+//                   <tbody>
+//                     {
+//                       v.address.map((data, i) =>
+//                         <tr>
+//                           <td>{i + 1}</td>
+//                           <td>{"House No # " + data.House_No}</td>
+//                           <td>{"City " + data.City}</td>
+//                           <td>{"Area " + data.area}</td>
+//                           <td>{"Country " + data.country}</td>
+//                         </tr>
+//                       )
+//                     }
+//                   </tbody>
+//                 </Table>
+//               </td>
+//             </tr>
+//           )}
+//         </tbody>
+//       </Table>
+//     </div>
+//   )
+// }
+
+
+// export default App;
+
+
+
+
+
+// Reuse Component in loop 06-10-21
+
+
+function App() {
+  const data = [
+    {
+      name: 'Danish', email: "danish@gmail.com", contact: "021", city: "karachi"
+    },
+    {
+      name: 'Daniyal', email: "daniyal@gmail.com", contact: "021", city: "karachi"
+    },
+    {
+      name: 'Riyaz', email: "riyaz@gmail.com", contact: "023", city: "karachi"
+    },
+    {
+      name: 'Ibrahim', email: "ibrahim@gmail.com", contact: "026", city: "karachi"
+    },
+  ]
   return (
     <div className="App">
-      <Table variant="dark">
-        <tbody>
-          <tr>
-            <td>S.no</td>
-            <td>Name</td>
-            <td>Contact</td>
-            <td>Email</td>
-            <td style={{ textAlign: "center" }}>Address</td>
-          </tr>
-          {user.map((v, i) =>
-            <tr>
-              <td>{i + 1}</td>
-              <td>{v.name}</td>
-              <td>{v.Contact}</td>
-              <td>{v.email}</td>
-              <td>
-                <Table variant="dark" hover>
-                  <tbody>
-                    {
-                      v.address.map((data, i) =>
-                        <tr>
-                          <td>{i + 1}</td>
-                          <td>{"House No # " + data.House_No}</td>
-                          <td>{"City " + data.City}</td>
-                          <td>{"Area " + data.area}</td>
-                          <td>{"Country " + data.country}</td>
-                        </tr>
-                      )
-                    }
-                  </tbody>
-                </Table>
-              </td>
-            </tr>
-          )}
-        </tbody>
-      </Table>
+      {data.map((v, i) =>
+        <Reuse data={v} />
+      )
+      }
     </div>
   )
 }
-
 
 export default App;
