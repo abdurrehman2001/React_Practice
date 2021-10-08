@@ -2,6 +2,8 @@
 import './App.css';
 import Reuse from './MyPracticeComponent/Reuse';
 
+import Child from './MyPracticeComponent/Child'
+
 
 // import Table from 'react-bootstrap/Table'
 // import { useState, useEffect } from 'react'
@@ -605,29 +607,75 @@ import Reuse from './MyPracticeComponent/Reuse';
 // Reuse Component in loop 06-10-21
 
 
-function App() {
-  const data = [
-    {
-      name: 'Danish', email: "danish@gmail.com", contact: "021", city: "karachi"
-    },
-    {
-      name: 'Daniyal', email: "daniyal@gmail.com", contact: "021", city: "karachi"
-    },
-    {
-      name: 'Riyaz', email: "riyaz@gmail.com", contact: "023", city: "karachi"
-    },
-    {
-      name: 'Ibrahim', email: "ibrahim@gmail.com", contact: "026", city: "karachi"
-    },
-  ]
-  return (
+// function App() {
+//   const data = [
+//     {
+//       name: 'Danish', email: "danish@gmail.com", contact: "021", city: "karachi"
+//     },
+//     {
+//       name: 'Daniyal', email: "daniyal@gmail.com", contact: "021", city: "karachi"
+//     },
+//     {
+//       name: 'Riyaz', email: "riyaz@gmail.com", contact: "023", city: "karachi"
+//     },
+//     {
+//       name: 'Ibrahim', email: "ibrahim@gmail.com", contact: "026", city: "karachi"
+//     },
+//   ]
+//   return (
+//     <div className="App">
+//       {data.map((v, i) =>
+//         <Reuse data={v} />
+//       )
+//       }
+//     </div>
+//   )
+// }
+
+// export default App;
+
+
+
+// Send Data Child to Parent Component 
+
+
+// function App(){
+//   function childSeDataParent(a){
+//     alert(a)
+//   }
+//   return(
+//     <div className="App">
+//     <Child data={childSeDataParent} />
+//     </div>
+//   )
+// }
+
+// export default App;
+
+
+// Aanil ka code
+
+// import User from './User'
+// function App() {
+//   function getName(name)
+//   {
+//     alert(name)
+//   }
+//   return (
+//     <div className="App">
+//       <h1>Lifting State Up</h1>
+//       <User getData={getName} />
+//     </div>
+//   );
+// }
+
+
+
+function App(){
+  return(
     <div className="App">
-      {data.map((v, i) =>
-        <Reuse data={v} />
-      )
-      }
+      hello
     </div>
   )
 }
-
 export default App;
