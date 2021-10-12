@@ -765,10 +765,39 @@ import ForwardRef from './MyPracticeComponent/ForwardRef';
 
 // export default App;
 
+
+// input Access krne ka dusra tarika 
+
+// function App() {
+//   const [data, setData] = useState(null)
+//   const [print, setPrint] = useState(false)
+//   function getValue(e) {
+//     setData(e.target.value)
+//     setPrint(false)
+//   }
+//   return (
+//     <div className="App">
+//       <h1>Input Access in React</h1>
+//       <br />
+//       {
+//         print ?
+//         <h1>Input Value : {data}</h1>
+//         :
+//         null
+//       }
+//       <input type="text" onChange={getValue} /><br /><br />
+//       <button onClick={() => setPrint(true)}>Print Value</button>
+//     </div>
+//   )
+// }
+
+// export default App;
+
+
 function App() {
   return (
     <div className="App">
-      My World
+      hello
     </div>
   )
 }
