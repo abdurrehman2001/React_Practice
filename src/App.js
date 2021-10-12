@@ -5,6 +5,7 @@ import Reuse from './MyPracticeComponent/Reuse';
 import Child from './MyPracticeComponent/Child'
 import { useEffect, useMemo, useRef, useState } from 'react';
 
+import ForwardRef from './MyPracticeComponent/ForwardRef';
 
 // import Table from 'react-bootstrap/Table'
 // import { useState, useEffect } from 'react'
@@ -721,11 +722,40 @@ import { useEffect, useMemo, useRef, useState } from 'react';
 // export default App;
 
 
-function App() {
-  return (
-    <div className="App">
-      Hello World
-    </div>
+// Forward-Ref in React
+
+// import ForwardRef from './MyPracticeComponent/ForwardRef';
+
+// function App() {
+//   const inputRef = useRef(null);
+//   function handle_forward_ref(){
+//     // console.log("Runing...... ");
+//     inputRef.current.value="Abdur-Rehman"
+//     inputRef.current.style.color="red"
+//     inputRef.current.style.backgroundColor="black"
+//     inputRef.current.style.border="4px solid red"
+//     inputRef.current.style.borderRadius="10px"
+//     inputRef.current.style.textAlign="center"
+//   }
+//   return (
+//     <div className="App">
+//       <h2>Forward Ref In React</h2>
+//       <ForwardRef ref={inputRef}/>
+//       <br />
+//       <br />
+//       <button onClick={handle_forward_ref}>Update</button>
+//     </div>
+//   )
+// }
+
+// export default App;
+
+
+function App(){
+  return(
+<div className="App">
+  Hello
+</div>
   )
 }
 
