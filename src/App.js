@@ -3,6 +3,7 @@ import './App.css';
 import Reuse from './MyPracticeComponent/Reuse';
 
 import Child from './MyPracticeComponent/Child'
+import { useEffect, useMemo, useState } from 'react';
 
 
 // import Table from 'react-bootstrap/Table'
@@ -671,11 +672,38 @@ import Child from './MyPracticeComponent/Child'
 
 
 
+//     useMemo Hook     12-10-21
+
+
+// function App() {
+//   const [count, setCount] = useState(0)
+//   const [item, setItem] = useState(5)
+//   const memoUse = useMemo(function memoFun() {
+//     console.log("memo Function chal raha hai");
+//     return count * 4
+//   }, [count])
+//   return (
+//     <div className="App">
+//       <h2>useMemo Hook in React</h2>
+//       <h3>Count : {count}</h3>
+//       <h3>Item : {item}</h3>
+//       <h3>Function is return count value mutiply : {memoUse}</h3>
+//       <button onClick={() => setCount(count + 1)}>Update Count</button>
+//       <br />
+//       <br />
+//       <button onClick={() => setItem(item * 5)}>Update Item</button>
+//     </div>
+//   )
+// }
+// export default App;
+
+
 function App(){
   return(
     <div className="App">
-      hello
+      Hello
     </div>
   )
 }
+
 export default App;
