@@ -750,12 +750,26 @@ import ForwardRef from './MyPracticeComponent/ForwardRef';
 
 // export default App;
 
+// Controlled Component
 
-function App(){
-  return(
-<div className="App">
-  Hello
-</div>
+// function App() {
+//   let [val, setVal] = useState()
+//   return (
+//     <div className="App">
+//       <input type="text" value={val} onChange={(e)=>setVal(e.target.value)} name="" id="" />
+//       <h2>Value : {val}</h2>
+//     </div>
+//   )
+// }
+// // Jo state k sth input handle ho wo Controlled Component kehla ta hai.....!! 
+
+// export default App;
+
+function App() {
+  return (
+    <div className="App">
+      My World
+    </div>
   )
 }
 
