@@ -3,7 +3,7 @@ import './App.css';
 import Reuse from './MyPracticeComponent/Reuse';
 
 import Child from './MyPracticeComponent/Child'
-import { useEffect, useMemo, useState } from 'react';
+import { useEffect, useMemo, useRef, useState } from 'react';
 
 
 // import Table from 'react-bootstrap/Table'
@@ -697,11 +697,34 @@ import { useEffect, useMemo, useState } from 'react';
 // }
 // export default App;
 
+//      useRef Hook In React
 
-function App(){
-  return(
+// function App() {
+//   let inputRef = useRef(null);
+//   function handleInput() {
+//     console.log(inputRef);
+//     inputRef.current.style.backgroundColor = "black";
+//     inputRef.current.value = "abdur-rehman"
+//     inputRef.current.style.color = "blue"
+//     inputRef.current.focus()
+//   }
+//   return (
+//     <div className="App">
+//       <input type="text" ref={inputRef} />
+//       <br />
+//       <br />
+//       <button onClick={handleInput}>Handle Input</button>
+//     </div>
+//   )
+// }
+
+// export default App;
+
+
+function App() {
+  return (
     <div className="App">
-      Hello
+      Hello World
     </div>
   )
 }
