@@ -794,10 +794,48 @@ import ForwardRef from './MyPracticeComponent/ForwardRef';
 // export default App;
 
 
+//    Uncontrolled Component 
+
+
+// function App() {
+//   let inputRef = useRef(null)
+//   let inputRef2 = useRef(null)
+//   function handle_form(e) {
+//     e.preventDefault()
+//     console.log("First Input Value : " + inputRef.current.value)
+//     console.log("Second Input Value : " + inputRef2.current.value)
+//     let input_with_id = document.getElementById("input_3").value
+//     console.log("Three Input Value : " + input_with_id)
+//   }
+//   return (
+//     <div className="App">
+//       <h1>Uncontrolled Component In React</h1>
+//       <form action="" onSubmit={handle_form}>
+//         <input ref={inputRef} type="text" name="" id="" />
+//         <br />
+//         <br />
+//         <input ref={inputRef2} type="text" name="" id="" />
+//         <br />
+//         <br />
+//         <input id="input_3" type="text" name="" />
+//         <br />
+//         <br />
+//         <button>Submit</button>
+//       </form>
+//     </div>
+//   )
+// }
+
+// ye without state handle krte hen 
+
+// export default App;
+
+
+
 function App() {
-  return (
+  return(
     <div className="App">
-      hello
+Hello
     </div>
   )
 }
