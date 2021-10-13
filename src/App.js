@@ -15,6 +15,8 @@ import About_Router from './MyPracticeComponent/About_Router';
 import Contact_Router from './MyPracticeComponent/Contact_Router';
 
 
+import Dynamic_Rounting from './MyPracticeComponent/Dynamic_Routing';
+
 
 // import Table from 'react-bootstrap/Table'
 // import { useState, useEffect } from 'react'
@@ -1005,13 +1007,42 @@ import Contact_Router from './MyPracticeComponent/Contact_Router';
 
 
 
-function App(){
-  return(
+//      Dynamic Routing
+
+
+// function App() {
+//   let users = [
+//     { id: "205205", name: "Peter", email: "peter@gmail.com" },
+//     { id: "210210", name: "Anil", email: "anil@gmail.com" },
+//     { id: "404504", name: "Poop", email: "poop@gmail.com" },
+//     { id: "950950", name: "Peep", email: "peep@gmail.com" },
+//     { id: "782165", name: "Jethaa", email: "jetha@gmail.com" },
+//     { id: "5612781", name: "Bakwass", email: "bakwas@gmail.com" },
+//   ]
+//   return (
+//     <div className="App">
+//       <h1>Dynamic Routing In React....!!</h1>
+//       <Router>
+//         {
+//           users.map((v, i) =>
+//             <div key={i}><Link to={"/user/" + v.id + "/" + v.name + "/" + v.email} >{v.name}</Link></div>)
+//         }
+//         <Route path="/user/:id/:name/:email"><Dynamic_Rounting /></Route>
+//       </Router>
+//     </div>
+//   )
+// }
+
+
+// export default App;
+
+
+function App() {
+  return (
     <div className="App">
-      My World
+      hello
     </div>
   )
 }
-
 
 export default App;
