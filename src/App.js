@@ -6,6 +6,7 @@ import Child from './MyPracticeComponent/Child'
 import { useEffect, useMemo, useRef, useState } from 'react';
 
 import ForwardRef from './MyPracticeComponent/ForwardRef';
+import { BrowserRouter as Router, Route, Link } from 'react-router-dom'
 
 // import Table from 'react-bootstrap/Table'
 // import { useState, useEffect } from 'react'
@@ -871,14 +872,48 @@ import ForwardRef from './MyPracticeComponent/ForwardRef';
 // export default App;
 
 
+//      Routing Setup
+
+//      Basic Router
 
 
-function App(){
-  return(
-    <div className="App">
-      Hellooo
-    </div>
-  )
-}
 
-export default App;
+// function App() {
+//   return (
+//     <div className="App">
+//       <Router>
+//         <Link to="/home">Home</Link>
+//         <br />
+//         <Link to="/about">About</Link>
+//         <Route path="/home"><Home /></Route>
+//         <Route path="/about"><About /></Route>
+//       </Router>
+//     </div>
+//   )
+// }
+
+// function Home() {
+//   return (
+//     <div>
+//       <h1>Home Page...!!</h1>
+//       <p>This is Home Page for web-site......</p>
+//     </div>
+//   )
+// }
+
+
+// function About() {
+//   return (
+//     <div>
+//       <h1>About Page.....!!</h1>
+//       <p>This is About Page for web-site.......</p>
+//     </div>
+//   )
+// }
+
+
+// export default App;
+
+
+
+
