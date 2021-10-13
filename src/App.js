@@ -6,7 +6,7 @@ import Child from './MyPracticeComponent/Child'
 import { useEffect, useMemo, useRef, useState } from 'react';
 
 import ForwardRef from './MyPracticeComponent/ForwardRef';
-import { BrowserRouter as Router, Route, Link } from 'react-router-dom'
+import { BrowserRouter as Router, Route, Link, Switch } from 'react-router-dom'
 
 
 import Nav from './MyPracticeComponent/Nav'
@@ -938,3 +938,80 @@ import Contact_Router from './MyPracticeComponent/Contact_Router';
 // }
 
 // export default App;
+
+
+
+//        Page Not Found - 404 Page
+
+
+// function App() {
+//   return (
+//     <div className="App">
+//       <Router>
+//         <Link to="/">Home</Link><br />
+//         <Link to="/about">About</Link><br />
+//         <Link to="details">Details</Link><br />
+//         {/* <Link to="/login">Login</Link> */}  
+//         {/* agr link bna bhi do to bhi 404 ka error show hoga */}
+//         <Switch>
+//           <Route path="/" exact><Home /></Route>
+//           <Route path="/about"><About /></Route>
+//           <Route path="/details"><Details /></Route>
+//           <Route path="*"><Page_Not_Found /></Route>  
+//           {/* ye hai error ka path */}
+//           {/* direct path se bhi koshish kroge to nh ja skoge... behthreen */}
+//         </Switch>
+//       </Router>
+//     </div>
+//   )
+// }
+
+// function Home() {
+//   return (
+//     <div>
+//       <h1>HOME PAGE............!!</h1>
+//       <p>This is Home Page for web-site........!!</p>
+//     </div>
+//   )
+// }
+
+// function About() {
+//   return (
+//     <div>
+//       <h1>ABOUT PAGE............!!</h1>
+//       <p>This is About Page for web-site........!!</p>
+//     </div>
+//   )
+// }
+
+// function Details() {
+//   return (
+//     <div>
+//       <h1>DETAILS PAGE............!!</h1>
+//       <p>This is Details Page for web-site........!!</p>
+//     </div>
+//   )
+// }
+
+// function Page_Not_Found() {
+//   return (
+//     <div>
+//       <h1>404 PAGE............!!</h1>
+//       <p>This Page is not found for web-site........!!</p>
+//     </div>
+//   )
+// }
+// export default App;
+
+
+
+function App(){
+  return(
+    <div className="App">
+      My World
+    </div>
+  )
+}
+
+
+export default App;
