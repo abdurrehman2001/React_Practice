@@ -8,6 +8,14 @@ import { useEffect, useMemo, useRef, useState } from 'react';
 import ForwardRef from './MyPracticeComponent/ForwardRef';
 import { BrowserRouter as Router, Route, Link } from 'react-router-dom'
 
+
+import Nav from './MyPracticeComponent/Nav'
+import Home_Router from './MyPracticeComponent/Home_Router';
+import About_Router from './MyPracticeComponent/About_Router';
+import Contact_Router from './MyPracticeComponent/Contact_Router';
+
+
+
 // import Table from 'react-bootstrap/Table'
 // import { useState, useEffect } from 'react'
 // function App() {
@@ -915,5 +923,18 @@ import { BrowserRouter as Router, Route, Link } from 'react-router-dom'
 // export default App;
 
 
+// Routing with Example and Best Practice
 
 
+// function App() {
+//   return (
+//     <div className="App">
+//       <Nav />
+//       <Route path="/" exact={true} ><Home_Router /></Route>
+//       <Route path="/about"><About_Router /></Route>
+//       <Route path="/contact"><Contact_Router /></Route>
+//     </div>
+//   )
+// }
+
+// export default App;
