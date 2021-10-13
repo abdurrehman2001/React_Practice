@@ -831,11 +831,52 @@ import ForwardRef from './MyPracticeComponent/ForwardRef';
 // export default App;
 
 
+//           13-10-21
 
-function App() {
+// Hight Order Component (HOC)
+
+
+// function App() {
+//   return (
+//     <div className="App">
+//       <HOCBlue cmp={Counter} />
+//       <HOCRed cmp={Counter} />
+//       <HOCGreen cmp={Counter} />
+//     </div>
+//   )
+// }
+
+// function HOCBlue(props) {
+//   return <h2 style={{ width: 140, backgroundColor: "blue" }}>Blue <props.cmp /></h2>
+// }
+
+
+// function HOCRed(props) {
+//   return <h2 style={{ width: 140, backgroundColor: "red" }}>Red <props.cmp /></h2>
+// }
+
+
+// function HOCGreen(props) {
+//   return <h2 style={{ width: 140, backgroundColor: "green" }}>Green <props.cmp /></h2>
+// }
+// function Counter() {
+//   const [count, setCount] = useState(0)
+//   return <div>
+//     <h4>{count}</h4>
+//     <button onClick={() => setCount(count + 1)}>Update</button>
+//   </div>
+// }
+
+
+// export default App;
+
+
+
+
+function App(){
   return(
     <div className="App">
-Hello
+      Hellooo
     </div>
   )
 }
