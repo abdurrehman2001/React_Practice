@@ -1036,11 +1036,58 @@ import Dynamic_Rounting from './MyPracticeComponent/Dynamic_Routing';
 
 // export default App;
 
+//  fetch API | GET method   14-10-21
+
+// function App() {
+//   let design = {
+//     border: "4px solid red",
+//     backgroundColor: "black",
+//     color: "red",
+//     margin: "0px auto",
+//     fontFamily: "monospace",
+//     marginTop:"20px"
+//   }
+//   const [user, setUser] = useState([])
+//   useEffect(() => {
+//     fetch("https://jsonplaceholder.typicode.com/todos").then((result) => {
+//       result.json().then((responce) => {
+//         // console.log(responce)
+//         setUser(responce)
+//       })
+//     })
+//   }, [])
+//   // console.log(user);
+//   return (
+//     <div className="App">
+//       <table style={design}>
+//         <tbody>
+//         <tr>
+//           <td>S.No</td>
+//           <td>Title</td>
+//           <td>i.d</td>
+//         </tr>
+//         {
+//           user.map((v,i) =>
+//             <tr key={i}>
+//               <td>{v.id}</td>
+//               <td>{v.title}</td>
+//               <td>{v.userId}</td>
+//             </tr>
+//           )
+//         }
+//         </tbody>
+//       </table>
+//     </div>
+//   )
+// }
+
+// export default App;
+
 
 function App() {
-  return (
+  return(
     <div className="App">
-      hello
+hello
     </div>
   )
 }
