@@ -1126,12 +1126,54 @@ import Dynamic_Rounting from './MyPracticeComponent/Dynamic_Routing';
 
 
 
+//    21-10-21    Previous state in functional component
+
+
+// function App() {
+//   const [count, setCount] = useState(0)
+//   function update_Counter() {
+
+//     // is me random number lgaya hai aur previous value check ki hai...... 
+
+//     // let random_number = Math.floor(Math.random()*20)
+//     // setCount((pre)=>{
+//     //   console.log(pre);
+//     //   // if(pre < 10){
+//     //   //   alert('value choti hai......!')
+//     //   // }
+//     //   return random_number
+//     // })
+
+//     // ye loop aur state check ki hai k kya ho raha hai.......!! 
+
+//     // for (var i = 1; i < 5; i++) {
+//     //   console.log("ye loop hai.........   " + i)
+//     //   setCount(count + 1)
+//     //   console.log("ye state hai........   " + count)
+//     // }
+
+
+//     // is me previous value plus ki hai loop k sath.....
+
+//     //   for (let i = 0; i < 5; i++) {
+//     //     setCount((previous) => previous+5)
+//     //   }
+//   }
+//   return (
+//     <div className="App">
+//       <h1>{count}</h1>
+//       <button onClick={update_Counter}>Click</button>
+//     </div>
+//   )
+// }
+
+// export default App;
 
 
 function App() {
-  return(
+  return (
     <div className="App">
-hello
+      hello
     </div>
   )
 }
