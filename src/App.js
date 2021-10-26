@@ -1175,12 +1175,30 @@ import Previous_Props from './MyPracticeComponent/previous_props'
 
 //    Previous Props with Hooks
 
+// function App() {
+//   const [counting, setCounting] = useState(0)
+//   return (
+//     <div className="App">
+//       <Previous_Props value={counting} />
+//       <button onClick={() => setCounting(Math.floor(Math.random() * 20))}>Click Me</button>
+//     </div>
+//   )
+// }
+
+// export default App;
+
+//    State with Object
+
 function App() {
-  const [counting, setCounting] = useState(0)
+  const [data, setData] = useState({ name: "Rehman", age: "18" })
   return (
     <div className="App">
-      <Previous_Props value={counting} />
-      <button onClick={() => setCounting(Math.floor(Math.random() * 20))}>Click Me</button>
+      <input type="text" placeholder="Enter Name" value={data.name} onChange={(e)=>setData({...data,name:e.target.value})} />
+      <br />
+      <br />
+      <input type="text" placeholder="Enter Age" value={data.age} onChange={(e)=>setData({...data,age:e.target.value})}/>
+    <h1>Name : {data.name}</h1>
+    <h1>Age : {data.age}</h1>
     </div>
   )
 }
