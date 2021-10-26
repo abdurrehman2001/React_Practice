@@ -17,6 +17,7 @@ import Contact_Router from './MyPracticeComponent/Contact_Router';
 
 import Dynamic_Rounting from './MyPracticeComponent/Dynamic_Routing';
 
+import Previous_Props from './MyPracticeComponent/previous_props'
 
 // import Table from 'react-bootstrap/Table'
 // import { useState, useEffect } from 'react'
@@ -1170,10 +1171,16 @@ import Dynamic_Rounting from './MyPracticeComponent/Dynamic_Routing';
 // export default App;
 
 
+//    26-10-2021
+
+//    Previous Props with Hooks
+
 function App() {
+  const [counting, setCounting] = useState(0)
   return (
     <div className="App">
-      hello
+      <Previous_Props value={counting} />
+      <button onClick={() => setCounting(Math.floor(Math.random() * 20))}>Click Me</button>
     </div>
   )
 }
