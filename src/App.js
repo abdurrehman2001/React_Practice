@@ -18,6 +18,7 @@ import Contact_Router from './MyPracticeComponent/Contact_Router';
 import Dynamic_Rounting from './MyPracticeComponent/Dynamic_Routing';
 
 import Previous_Props from './MyPracticeComponent/previous_props'
+import Parents from './Context_API_Practice/Components_Context_API_Practice/Parents';
 
 // import Table from 'react-bootstrap/Table'
 // import { useState, useEffect } from 'react'
@@ -1189,16 +1190,28 @@ import Previous_Props from './MyPracticeComponent/previous_props'
 
 //    State with Object
 
+// function App() {
+//   const [data, setData] = useState({ name: "Rehman", age: "18" })
+//   return (
+//     <div className="App">
+//       <input type="text" placeholder="Enter Name" value={data.name} onChange={(e)=>setData({...data,name:e.target.value})} />
+//       <br />
+//       <br />
+//       <input type="text" placeholder="Enter Age" value={data.age} onChange={(e)=>setData({...data,age:e.target.value})}/>
+//     <h1>Name : {data.name}</h1>
+//     <h1>Age : {data.age}</h1>
+//     </div>
+//   )
+// }
+
+// export default App;
+
+
 function App() {
-  const [data, setData] = useState({ name: "Rehman", age: "18" })
+
   return (
     <div className="App">
-      <input type="text" placeholder="Enter Name" value={data.name} onChange={(e)=>setData({...data,name:e.target.value})} />
-      <br />
-      <br />
-      <input type="text" placeholder="Enter Age" value={data.age} onChange={(e)=>setData({...data,age:e.target.value})}/>
-    <h1>Name : {data.name}</h1>
-    <h1>Age : {data.age}</h1>
+      <Parents />
     </div>
   )
 }
